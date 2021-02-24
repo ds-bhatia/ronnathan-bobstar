@@ -27,7 +27,7 @@ async def arri(ctx):
 async def invite(ctx):
     invite_url = "https://discord.com/api/oauth2/authorize?client_id=813836773758992404&permissions=0&scope=bot"
     embed = discord.Embed(
-        title = "Click here to invite Winston!", url = invite_url, color = discord.Color.dark_gray())
+        title = "Click here to invite Ronnathan Bobstar!", url = invite_url, color = discord.Color.dark_gray())
     await ctx.send(embed = embed)
 
 @client.command(name = "support")
