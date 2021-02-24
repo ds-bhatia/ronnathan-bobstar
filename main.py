@@ -18,5 +18,9 @@ async def muda(ctx):
 @client.command(name = "dora")
 async def dora(ctx):
     await ctx.send("DORA DORA DORA DORA DORA!")
+    
+@client.command(name = "arri")
+async def arri(ctx):
+    await ctx.send("ARRI ARRI ARRI ARRI ARRIVEDERCI!")
 
 client.run(token)
