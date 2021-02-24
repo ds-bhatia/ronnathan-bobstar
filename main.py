@@ -23,10 +23,9 @@ async def reddit(ctx):
     embed = discord.Embed(
         title = "Click here to go to the jojo subreddit!", url = invite_url, color = discord.Color.dark_gray())
     await ctx.send(embed = embed)
-async def meme(ctx):
-    invite_url = "https://www.reddit.com/r/ShitpostCrusaders/"
+    invite_url2 = "https://www.reddit.com/r/ShitpostCrusaders/"
     embed = discord.Embed(
-        title = "Click here to go to the jojo meme subreddit!", url = invite_url, color = discord.Color.dark_gray())
+        title = "Click here to go to the jojo meme subreddit!", url = invite_url2, color = discord.Color.dark_gray())
     await ctx.send(embed = embed)
     
 
