@@ -2,7 +2,7 @@ import discord
 from discord.ext import commands, tasks
 import os
 
-token = os.environ("TOKEN")
+token = os.environ["TOKEN"]
 
 client = commands.Bot(command_prefix = "j!")
 
