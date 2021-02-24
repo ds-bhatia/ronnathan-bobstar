@@ -22,3 +22,6 @@ async def dora(ctx):
 @commands.command(name = "arri")
 async def arri(ctx):
     await ctx.send("ARRI ARRI ARRI ARRI ARRIVEDERCI!")
+
+def setup(client):
+    client.add_cog(Cries(client))
