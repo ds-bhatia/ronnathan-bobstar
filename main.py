@@ -7,7 +7,7 @@ token = os.environ["TOKEN"]
 client = commands.Bot(command_prefix = "j!")
 
 @client.command(name = "ora")
-async def ora(self, ctx):
+async def ora(ctx):
     await ctx.send("ORA ORA ORA ORA ORA!")
 
 
