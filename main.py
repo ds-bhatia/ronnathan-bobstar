@@ -17,7 +17,7 @@ async def invite(ctx):
 async def support(ctx):
     await ctx.send("Support Server:\nhttps://discord.gg/EThRPErsQF")
 
-@client.commad(name = "reddit")
+@client.command(name = "reddit")
 async def reddit(ctx):
     invite_url = "https://www.reddit.com/r/StardustCrusaders/"
     embed = discord.Embed(
