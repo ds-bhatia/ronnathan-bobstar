@@ -11,7 +11,7 @@ client = commands.Bot(command_prefix = "j!")
 async def ora(ctx):
     await ctx.send("ORA ORA ORA ORA ORA!")
 
-@client.commad(name = "muda")
+@client.command(name = "muda")
 async def muda(ctx):
     await ctx.send("MUDA MUDA MUDA MUDA MUDA!")
 
