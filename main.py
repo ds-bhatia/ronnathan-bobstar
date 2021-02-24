@@ -17,6 +17,20 @@ async def invite(ctx):
 async def support(ctx):
     await ctx.send("Support Server:\nhttps://discord.gg/EThRPErsQF")
 
+@client.commad(name = "reddit")
+async def reddit(ctx):
+    invite_url = "https://www.reddit.com/r/StardustCrusaders/"
+    embed = discord.Embed(
+        title = "Click here to go to the jojo subreddit!", url = invite_url, color = discord.Color.dark_gray())
+    await ctx.send(embed = embed)
+async def meme(ctx):
+    invite_url = "https://www.reddit.com/r/ShitpostCrusaders/"
+    embed = discord.Embed(
+        title = "Click here to go to the jojo meme subreddit!", url = invite_url, color = discord.Color.dark_gray())
+    await ctx.send(embed = embed)
+    
+
+
 #Import cog
 
 for filename in os.listdir("./cogs"):
