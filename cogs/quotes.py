@@ -28,7 +28,8 @@ class Quotes(commands.Cog):
             "Rerorerorerorerorero \n        - Noriyaki Kakyoin",
             "Nice watch. I'm going to break it so you can never tell time again. Your face, that is. \n         - Jotaro Kujo",
             "I, Giorno Giovanna, have a dream! \n       - Giorno Giovanna",
-            
+            "Arrivederci \n         - Bruno Bucciarati",
+            "Daga Kotowaru \n       - Rohan Kishibe"
 
         ]
         await ctx.send(random.choice(quotes))
