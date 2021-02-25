@@ -15,10 +15,10 @@ class Quotes(commands.Cog):
             "MUDA MUDA MUDA MUDA MUDAAA! \n     - DIO",
             "OH NO! \n      - Joseph Joestar",
             "Yare, Yare Daze... \n      - Jotaro Kujo",
-            "NIGERUNDAYOO! \n       - Jotaro Kujo",
+            "NIGERUNDAYOO! \n       - Joseph Joestar",
             "There are times when a gentleman has to be courageous and fight, even when his opponent is bigger than he is and he knows he’s going to lose! \n       - Jonathan Joestar",
-            "You may have outsmarted me, but I have outsmarted your outsmarting! \n         - Joseph Joestar"
-
+            "You may have outsmarted me, but I have outsmarted your outsmarting! \n         - Joseph Joestar",
+            "I'LL MAKE YOU CRY LIKE A BABY, DIO!!! \n       - Jonathan Joestar" 
         ]
         await ctx.send(random.choice(quotes))
 
