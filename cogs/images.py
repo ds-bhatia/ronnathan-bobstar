@@ -27,7 +27,7 @@ class Images(commands.Cog):
     async def jotaro(self, ctx):
         jotaro_gifs = [
             "https://tenor.com/view/jotaro-jojo-kujo-jotaro-kujo-star-platinium-gif-19293164",
-            "https://tenor.com/view/jojo-jotaro-kujo-red-gif-16540590",
+            "https://tenor.com/view/jojos-bizarre-adventure-anime-jotaro-jotaro-kujo-dancing-gif-17580280",
             "https://tenor.com/view/anime-jotaro-jjba-jojo-yare-gif-12243323"
         ]
         await ctx.send(random.choice(jotaro_gifs))
