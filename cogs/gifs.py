@@ -74,6 +74,13 @@ class Gifs(commands.Cog):
             "https://tenor.com/view/josuke-funny-gif-18213896",
         ]
         await ctx.send(random.choice(josuk8_gifs))
+    
+    @commands.command(name = "stroheim")
+    async def stroheim(self, ctx):
+        stroheim_gifs = [
+            "https://tenor.com/view/rudol-von-stroheim-stroheim-jojos-bizarre-adventure-jojo-battle-tendency-gif-13994621"
+        ]
+        await ctx.send(random.choice(stroheim_gifs))
 
 def setup(client):
     client.add_cog(Gifs(client))
