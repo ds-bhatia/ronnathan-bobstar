@@ -37,7 +37,8 @@ class Gifs(commands.Cog):
         josuke_gifs = [
             "https://tenor.com/view/jojo-josuke-higashikata-bam-anime-stylish-pose-gif-16544034",
             "https://tenor.com/view/josuke-josuke-jojo-josuke-higashikata-scream-scared-gif-14400885",
-            "https://tenor.com/view/josuke-higashikata-josuke-nijimura-okuyasu-jojo-bizarre-adventure-jojo-gif-16712808"
+            "https://tenor.com/view/josuke-higashikata-josuke-nijimura-okuyasu-jojo-bizarre-adventure-jojo-gif-16712808",
+            "https://tenor.com/view/jojojosuke-josuke-bizzare-gureto-daze-gif-18658827"
         ]
         await ctx.send(random.choice(josuke_gifs))
     
