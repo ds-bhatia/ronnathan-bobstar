@@ -23,4 +23,4 @@ class Quotes(commands.Cog):
         await ctx.send(random.choice(quotes))
 
 def setup(client):
-    client.add_cog(Gifs(client))
+    client.add_cog(Quotes(client))
