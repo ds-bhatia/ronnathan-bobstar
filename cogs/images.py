@@ -73,3 +73,6 @@ class Images(commands.Cog):
             "https://tenor.com/view/josuke-funny-gif-18213896",
         ]
         await ctx.send(random.choice(josuk8_gifs))
+
+def setup(client):
+    client.add_cog(Images(client))
