@@ -20,3 +20,4 @@ class Quotes(commands.Cog):
             "You may have outsmarted me, but I have outsmarted your outsmarting! \n         - Joseph Joestar"
 
         ]
+        await ctx.send(random.choice(quotes))
