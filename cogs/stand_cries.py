@@ -16,7 +16,7 @@ class Cries(commands.Cog):
 
     @commands.command(name = "dora")
     async def dora(self, ctx):
-        await ctx.send("DORA DORA DORA DORA DORA!")
+        await ctx.send("DORARARARARARA!")
     
     @commands.command(name = "arri")
     async def arri(self, ctx):
