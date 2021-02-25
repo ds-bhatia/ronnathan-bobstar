@@ -6,21 +6,20 @@ class Cries(commands.Cog):
         self.client = client
 
 
-
     @commands.command(name = "ora")
-    async def ora(ctx):
+    async def ora(self, ctx):
         await ctx.send("ORA ORA ORA ORA ORA!")
 
     @commands.command(name = "muda")
-    async def muda(ctx):
+    async def muda(self, ctx):
         await ctx.send("MUDA MUDA MUDA MUDA MUDA!")
 
     @commands.command(name = "dora")
-    async def dora(ctx):
+    async def dora(self, ctx):
         await ctx.send("DORA DORA DORA DORA DORA!")
     
     @commands.command(name = "arri")
-    async def arri(ctx):
+    async def arri(self, ctx):
         await ctx.send("ARRI ARRI ARRI ARRI ARRIVEDERCI!")
 
 def setup(client):
