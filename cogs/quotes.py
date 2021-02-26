@@ -31,7 +31,9 @@ class Quotes(commands.Cog):
             "Arrivederci \n         - Bruno Bucciarati",
             "Daga Kotowaru \n       - Rohan Kishibe",
             "ORE WA NINGAN WO YAMERUZO JOJO \n      - DIO",
-            "I REJECT MY HUMANITY, JOJO! \n         - DIO"
+            "I REJECT MY HUMANITY, JOJO! \n         - DIO",
+            "Heyy Babyyy! \n        - Baron Zeppeli",
+            "Hö, nukhatte kuru noka \n      - DIO"
 
         ]
         await ctx.send(random.choice(quotes))
