@@ -9,15 +9,16 @@ class Music(commands.Cog):
 
     @commands.command(name = "summon", aliases=["connect"])
     @commands.has_permissions(manage_guild=True)
-    async def _summon(self, ctx: commands.Context, *, channel: discord.VoiceChannel = None):
-        if not channel and not ctx.author.voice:
-            raise VoiceError('You are neither connected to a voice channel nor specified a channel to join.')
-        destination = channel or ctx.author.voice.channel
-        if ctx.voice_state.voice:
-            await ctx.voice_state.voice.move_to(destination)
+    async def _summon(self, ctx):
+        if not ctx.message.author.voice:
+            await ctx.send("You are not connected to a voice channel!")
             return
+        
+        else:
+            channel = ctx.message.author.voice.channel
+        
+        await channel.connect
 
-        ctx.voice_state.voice = await destination.connect()
 
 
 def setup(client):
