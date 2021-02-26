@@ -1,10 +1,19 @@
 import discord
 from discord.ext import commands, tasks
 import os
+import youtube_dl
 
 token = os.environ["TOKEN"]
 
 client = commands.Bot(command_prefix = "j!")
+
+@client.commad(name = "github")
+async def github(ctx):
+    github_url = "https://github.com/Technoselbow/ronnathan-bobstar"
+    embed = discord.Ember(
+        title = "Click here to go to the Github repo!", url = github_url, color = discord.Color.dark_gray()
+    )
+    await ctx.send(embed = embed)
 
 @client.command(name = "invite")
 async def invite(ctx):
