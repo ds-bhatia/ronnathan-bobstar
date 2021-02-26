@@ -20,7 +20,7 @@ class Music(commands.Cog):
         
         await channel.connect()
 
-    @client.command(name='leave', aliases=["disconnect"])
+    @commands.command(name='leave', aliases=["disconnect"])
     async def leave(ctx):
         voice_client = ctx.message.guild.voice_client
         await voice_client.disconnect()
