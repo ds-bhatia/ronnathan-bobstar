@@ -10,7 +10,7 @@ client = commands.Bot(command_prefix = "j!")
 @client.command(name = "github")
 async def github(ctx):
     github_url = "https://github.com/Technoselbow/ronnathan-bobstar"
-    embed = discord.Ember(
+    embed = discord.Embed(
         title = "Click here to go to the Github repo!", url = github_url, color = discord.Color.dark_gray()
     )
     await ctx.send(embed = embed)
