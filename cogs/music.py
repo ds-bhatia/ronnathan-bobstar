@@ -21,9 +21,13 @@ class Music(commands.Cog):
         await channel.connect()
 
     @commands.command(name='leave', aliases=["disconnect"])
-    async def leave(ctx):
-        voice_client = ctx.message.guild.voice_client
-        await voice_client.disconnect()
+    async def leave(self, ctx):
+        if not voice_client.is_connected():
+            await ctx.send("I am not connected to a voice channel!")
+
+        else:
+            voice_client = ctx.message.guild.voice_client
+            await voice_client.disconnect()
 
 
 
