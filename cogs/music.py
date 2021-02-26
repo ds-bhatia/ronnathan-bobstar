@@ -18,7 +18,7 @@ class Music(commands.Cog):
         else:
             channel = ctx.message.author.voice.channel
         
-        await channel.connect
+        await channel.connect()
 
 
 
