@@ -7,7 +7,7 @@ class Music(commands.Cog):
     def __init__(self, client):
         self.client = client
 
-    youtube_dl.utils.bug_reports_message = lambda: 
+    youtube_dl.utils.bug_reports_message = lambda: ''
 
     @commands.command(name = "summon", aliases=["play"])
     async def play(self, ctx):
