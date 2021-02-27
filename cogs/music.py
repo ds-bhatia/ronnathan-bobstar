@@ -29,9 +29,6 @@ class Music(commands.Cog):
         else:
             await voice_client.disconnect()
 
-    @commands.command(name="play")
-    async def play(ctx, url : str):
-        voice = discord.utils.get(client.voice_clients, guild=ctx.guild)
 
 
 def setup(client):
