@@ -18,7 +18,10 @@ class Music(commands.Cog):
         else:
             channel = ctx.message.author.voice.channel
         
-        await channel.connect()
+        if not voice.is_connected():
+            await channel.connect()
+        else:
+            await ctx.send("I am already in a voice channel!")
 
     @commands.command(name='leave', aliases=["disconnect"])
     async def leave(self, ctx):
@@ -29,6 +32,9 @@ class Music(commands.Cog):
         else:
             await voice_client.disconnect()
 
+    @commands.command(name="play")
+    async def play(ctx, url : str):
+        voice = discord.utils.get(client.voice_clients, guild=ctx.guild)
 
 
 def setup(client):
