@@ -18,10 +18,7 @@ class Music(commands.Cog):
         else:
             channel = ctx.message.author.voice.channel
         
-        if not voice.is_connected():
-            await channel.connect()
-        else:
-            await ctx.send("I am already in a voice channel!")
+        await channel.connect()
 
     @commands.command(name='leave', aliases=["disconnect"])
     async def leave(self, ctx):
