@@ -21,7 +21,7 @@ class Quotes(commands.Cog):
             "I'LL MAKE YOU CRY LIKE A BABY, DIO!!! \n       - Jonathan Joestar",
             "SUNLIGHT YELLOW OVERDRIVE! \n      - Jonathan Joestar",
             "GOODBYE, JOJO! \n      - DIO", 
-            "It was me! Dio! \n         - DIO",
+            "Kono Dio Da! \n         - DIO",
             "NIIIIIIIIIICEEEEE \n       - Joseph Joestar",
             "OHHHHHHHH MYYYYY GOOOOOODDDDD \n       - Joseph Joestar",
             "YES! I AM! \n      - Mohammed Avdol",
