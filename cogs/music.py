@@ -30,7 +30,7 @@ class Music(commands.Cog):
             await voice_client.disconnect()
 
     @commands.command(name = "pause")
-    async def pause(ctx):
+    async def pause(self, ctx):
         voice = discord.utils.get(client.voice_clients, guild = ctx.guild)
         if voice.is_playing():
             voice.pause()
@@ -38,7 +38,7 @@ class Music(commands.Cog):
             await ctx.send("Currently no audio is playing")
 
     @commands.command(name = "resume")
-    async def resume(ctx):
+    async def resume(self, ctx):
         voice = discord.utils.get(client.voice_clients, guild = ctx.guild)
         if voice.is_paused():
             voice.resume()
@@ -46,7 +46,7 @@ class Music(commands.Cog):
             await ctx.send("The audio is not paused")
 
     @commands.command(name = "stop")
-    async def stop(ctx):
+    async def stop(self, ctx):
         voice = discord.utils.get(client.voice_clients, guild = ctx.guild)
         voice.stop()
 
