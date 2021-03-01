@@ -31,24 +31,24 @@ class Music(commands.Cog):
 
     @commands.command(name = "pause")
     async def pause(self, ctx):
-        voice = discord.utils.get(client.voice_clients, guild = ctx.guild)
-        if voice.is_playing():
-            voice.pause()
+        voice_client = ctx.message.guild.voice_client
+        if voice_client.is_playing():
+            voice_client.pause()
         else:
             await ctx.send("Currently no audio is playing")
 
     @commands.command(name = "resume")
     async def resume(self, ctx):
-        voice = discord.utils.get(client.voice_clients, guild = ctx.guild)
-        if voice.is_paused():
-            voice.resume()
+        voice_client = ctx.message.guild.voice_client
+        if voice_client.is_paused():
+            voice_client.resume()
         else:
             await ctx.send("The audio is not paused")
 
     @commands.command(name = "stop")
     async def stop(self, ctx):
-        voice = discord.utils.get(client.voice_clients, guild = ctx.guild)
-        voice.stop()
+        voice_client = ctx.message.guild.voice_client
+        voice_client.stop()
 
 def setup(client):
     client.add_cog(Music(client))
