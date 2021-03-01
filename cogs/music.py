@@ -30,7 +30,7 @@ class Music(commands.Cog):
             await voice_client.disconnect()
 
     @commands.command(name = "pause")
-    async def pause(ctx)
+    async def pause(ctx):
     voice = discord.utils.get(client.voice_clients, guild = ctx.guild)
     if voice.is_playing():
         voice.pause()
