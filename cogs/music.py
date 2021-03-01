@@ -9,7 +9,7 @@ class Music(commands.Cog):
 
     youtube_dl.utils.bug_reports_message = lambda: ''
 
-    @commands.command(name = "summon", aliases=["play"])
+    @commands.command(name = "awaken", aliases=["summon"])
     async def play(self, ctx):
         if not ctx.message.author.voice:
             await ctx.send("You are not connected to a voice channel!")
