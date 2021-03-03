@@ -6,7 +6,7 @@ import youtube_dl
 token = os.environ["TOKEN"]
 
 client = commands.Bot(command_prefix = "j!")
-bot.remove_command('help')
+client.remove_command('help')
 
 @client.command(name = "github")
 async def github(ctx):
