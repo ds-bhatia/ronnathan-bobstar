@@ -1,3 +1,4 @@
 discord.py
 youtube_dl
 pynacl
+discord-pretty-help

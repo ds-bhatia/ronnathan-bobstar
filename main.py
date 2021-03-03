@@ -2,11 +2,11 @@ import discord
 from discord.ext import commands, tasks
 import os
 import youtube_dl
+from pretty_help import PrettyHelp
 
 token = os.environ["TOKEN"]
 
-client = commands.Bot(command_prefix = "j!")
-client.remove_command('help')
+client = commands.Bot(command_prefix = "j!", help_command=PrettyHelp())
 
 @client.command(name = "github")
 async def github(ctx):
