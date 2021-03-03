@@ -50,7 +50,7 @@ class YTDLSource(discord.PCMVolumeTransformer):
         filename = data['url'] if stream else ytdl.prepare_filename(data)
         return cls(discord.FFmpegPCMAudio(filename, **ffmpeg_options), data=data)
 
-    @commands.command(name = "awaken", aliases=["summon"])
+    @commands.command(name = "awaken", aliases=["summon"], description = "Get the bot to join your voice channel")
     async def play(self, ctx):
         if not ctx.message.author.voice:
             await ctx.send("You are not connected to a voice channel!")
@@ -61,7 +61,7 @@ class YTDLSource(discord.PCMVolumeTransformer):
         
         await channel.connect()
 
-    @commands.command(name='arrivederci', aliases=["disconnect"])
+    @commands.command(name='arrivederci', aliases=["disconnect"], description = "Get the bot to leave the voice channel")
     async def leave(self, ctx):
         voice_client = ctx.message.guild.voice_client
         if not voice_client.is_connected():
@@ -70,7 +70,7 @@ class YTDLSource(discord.PCMVolumeTransformer):
         else:
             await voice_client.disconnect()
 
-    @commands.command(name = "play")
+    @commands.command(name = "play", description = "Coming soon")
     async def play(self, ctx):
         server = ctx.message.guild
         voice_channel = server.voice_client

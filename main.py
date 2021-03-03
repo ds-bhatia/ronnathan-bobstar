@@ -8,7 +8,7 @@ token = os.environ["TOKEN"]
 
 client = commands.Bot(command_prefix = "j!", help_command=PrettyHelp())
 
-@client.command(name = "github")
+@client.command(name = "github", "Go to the github repository")
 async def github(ctx):
     github_url = "https://github.com/Technoselbow/ronnathan-bobstar"
     embed = discord.Embed(
@@ -16,18 +16,18 @@ async def github(ctx):
     )
     await ctx.send(embed = embed)
 
-@client.command(name = "invite")
+@client.command(name = "invite", description = "Get the invite link to the bot")
 async def invite(ctx):
     invite_url = "https://discord.com/api/oauth2/authorize?client_id=813836773758992404&permissions=0&scope=bot"
     embed = discord.Embed(
         title = "Click here to invite Ronnathan Bobstar!", url = invite_url, color = discord.Color.dark_gray())
     await ctx.send(embed = embed)
 
-@client.command(name = "support")
+@client.command(name = "support", description = "Get the link for the support server")
 async def support(ctx):
     await ctx.send("Support Server:\nhttps://discord.gg/EThRPErsQF")
 
-@client.command(name = "reddit")
+@client.command(name = "reddit", description = "Get the links for the jojo subreddits")
 async def reddit(ctx):
     invite_url = "https://www.reddit.com/r/StardustCrusaders/"
     embed = discord.Embed(
