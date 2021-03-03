@@ -6,7 +6,7 @@ class Gifs(commands.Cog):
     def __init__(self, client):
         self.client = client
 
-    @commands.command(name = "jonathan", description = "Get gifs for jonathan")
+    @commands.command(name = "jonathan", brief = "Get gifs for jonathan")
     async def jonathan(self, ctx):
         jonathan_gifs = [
             "https://tenor.com/view/jonathan-joestar-jojo-jojoba-gif-9876465",
@@ -14,7 +14,7 @@ class Gifs(commands.Cog):
         ]
         await ctx.send(random.choice(jonathan_gifs))
 
-    @commands.command(name = "joseph", description = "Get gifs for joseph")
+    @commands.command(name = "joseph", brief = "Get gifs for joseph")
     async def joseph(self, ctx):
         joseph_gifs = [
             "https://tenor.com/view/joseph-joestar-nice-gif-7319727",
@@ -23,7 +23,7 @@ class Gifs(commands.Cog):
         ]
         await ctx.send(random.choice(joseph_gifs))
 
-    @commands.command(name = "jotaro", description = "Get gifs for jotaro")
+    @commands.command(name = "jotaro", brief = "Get gifs for jotaro")
     async def jotaro(self, ctx):
         jotaro_gifs = [
             "https://tenor.com/view/jotaro-jojo-kujo-jotaro-kujo-star-platinium-gif-19293164",
@@ -32,7 +32,7 @@ class Gifs(commands.Cog):
         ]
         await ctx.send(random.choice(jotaro_gifs))
 
-    @commands.command(name = "josuke", description = "Get gifs for josuke")
+    @commands.command(name = "josuke", brief = "Get gifs for josuke")
     async def josuke(self, ctx):
         josuke_gifs = [
             "https://tenor.com/view/jojo-josuke-higashikata-bam-anime-stylish-pose-gif-16544034",
@@ -42,7 +42,7 @@ class Gifs(commands.Cog):
         ]
         await ctx.send(random.choice(josuke_gifs))
     
-    @commands.command(name = "giorno", description = "Get gifs for giorno")
+    @commands.command(name = "giorno", brief = "Get gifs for giorno")
     async def giorno(self, ctx):
         giorno_gifs = [
             "https://tenor.com/view/giorno-giovanna-tea-piss-gif-14148345",
@@ -51,7 +51,7 @@ class Gifs(commands.Cog):
         ]
         await ctx.send(random.choice(giorno_gifs))
     
-    @commands.command(name = "jolyne", description = "Get gifs for jolyne")
+    @commands.command(name = "jolyne", brief = "Get gifs for jolyne")
     async def jolyne(self, ctx):
         jolyne_gifs = [
             "https://tenor.com/view/jojo-jolyne-gif-20403991",
@@ -60,7 +60,7 @@ class Gifs(commands.Cog):
         ]
         await ctx.send(random.choice(jolyne_gifs))
 
-    @commands.command(name = "johnny", description = "Get gifs for johnny")
+    @commands.command(name = "johnny", brief = "Get gifs for johnny")
     async def johnny(self, ctx):
         johnny_gifs = [
             "https://tenor.com/view/jesus-johnny-joestar-fortnite-dance-dancing-gif-17600990",
@@ -68,14 +68,14 @@ class Gifs(commands.Cog):
         ]
         await ctx.send(random.choice(johnny_gifs))
 
-    @commands.command(name = "josuk8", description = "Get gifs for josuk8")
+    @commands.command(name = "josuk8", brief = "Get gifs for josuk8")
     async def josuk8(self, ctx):
         josuk8_gifs = [
             "https://tenor.com/view/josuke-funny-gif-18213896",
         ]
         await ctx.send(random.choice(josuk8_gifs))
     
-    @commands.command(name = "stroheim", description = "Get gifs for stroheim")
+    @commands.command(name = "stroheim", brief = "Get gifs for stroheim")
     async def stroheim(self, ctx):
         stroheim_gifs = [
             "https://tenor.com/view/rudol-von-stroheim-stroheim-jojos-bizarre-adventure-jojo-battle-tendency-gif-13994621"

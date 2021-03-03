@@ -6,7 +6,7 @@ class Quotes(commands.Cog):
     def __init__(self, client):
         self.client = client
 
-    @commands.command(name = "quote", description = "Get a random quote from JoJo's Bizarre Adventure")
+    @commands.command(name = "quote", brief = "Get a random quote from JoJo's Bizarre Adventure")
     async def quote(self, ctx):
         quotes = [
             "Even Speedwagon is afraid! \n      - Johnathan Joestar",
