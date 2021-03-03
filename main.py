@@ -8,7 +8,7 @@ token = os.environ["TOKEN"]
 
 client = commands.Bot(command_prefix = "j!", help_command=PrettyHelp())
 
-@client.command(name = "github", "Go to the github repository")
+@client.command(name = "github",description = "Go to the github repository")
 async def github(ctx):
     github_url = "https://github.com/Technoselbow/ronnathan-bobstar"
     embed = discord.Embed(
