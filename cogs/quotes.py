@@ -33,7 +33,8 @@ class Quotes(commands.Cog):
             "ORE WA NINGAN WO YAMERUZO JOJO \n      - DIO",
             "I REJECT MY HUMANITY, JOJO! \n         - DIO",
             "Heyy Babyyy! \n        - Baron Zeppeli",
-            "Hö, nukhatte kuru noka \n      - DIO"
+            "Hö, nukhatte kuru noka \n      - DIO",
+            "HELL 2 U! \n       - Mohammed Avdol"
 
         ]
         await ctx.send(random.choice(quotes))
