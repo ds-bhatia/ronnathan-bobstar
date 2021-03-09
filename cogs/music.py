@@ -11,7 +11,7 @@ class Music(commands.Cog):
     
 
     @commands.command(name = "awaken", aliases=["summon"], brief = "Get the bot to join your voice channel")
-    async def play(self, ctx):
+    async def awaken(self, ctx):
         if not ctx.message.author.voice:
             await ctx.send("You are not connected to a voice channel!")
             return
