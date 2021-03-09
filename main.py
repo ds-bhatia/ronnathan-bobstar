@@ -10,7 +10,7 @@ client = commands.Bot(command_prefix = "j!", help_command=PrettyHelp())
 
 @client.event
 async def on_ready():
-    await client.change_presence(activity = discord.Activity(type = discord.ActivityType.watching, "JoJo || j!help"))
+    await client.change_presence(activity = discord.Activity(type = discord.ActivityType.watching, name = "JoJo || j!help"))
 
 #Import cog
 
