@@ -2,6 +2,7 @@ import discord
 from discord.ext import commands, tasks
 import youtube_dl
 from discord.voice_client import VoiceClient
+import os
 
 class Music(commands.Cog):
     def __init__(self, client):
