@@ -31,7 +31,7 @@ class Music(commands.Cog):
         else:
             await voice_client.disconnect()
 
-    @commands.command(pass_context=True)
+    @commands.command()
     async def play(self, ctx, url : str):
         song_there = os.path.isfile("song.mp3")
         try:
@@ -43,7 +43,7 @@ class Music(commands.Cog):
 
         channel = ctx.message.author.voice.channel
         await channel.connect()
-        voice = discord.utils.get(client.voice_clients, guild=ctx.guild)
+        voice = discord.utils.get(self.client.voice_clients, guild=ctx.guild)
         
 
         ydl_opts = {
