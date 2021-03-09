@@ -32,7 +32,6 @@ class Music(commands.Cog):
 
     @commands.command(pass_context=True)
     async def play(self, ctx, url : str):
-        channel = ctx.message.author.voice.channel
         await ctx.send("No u play")
 def setup(client):
     client.add_cog(Music(client))
