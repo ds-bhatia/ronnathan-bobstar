@@ -17,9 +17,9 @@ async def on_ready():
 @client.event
 async def on_message(message):
     if message.author.id == 513016113702109185:
-        await message.delete()
+        pass
     elif message.author.id == 722456597003108373:
-        await message.delete()
+        pass
     else:
         await client.process_commands(message)
 
