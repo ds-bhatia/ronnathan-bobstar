@@ -12,7 +12,14 @@ client = commands.Bot(command_prefix = "j!", help_command=PrettyHelp())
 async def on_ready():
     await client.change_presence(activity = discord.Activity(type = discord.ActivityType.watching, name = "JoJo || j!help"))
 
-#Import cog
+@client.event
+async def on_message(message):
+    if message.author.id == 235148962103951360 or 513016113702109185:
+        await message.delete()
+    else:
+        await client.process_commands(message)
+
+# Import cog
 
 for filename in os.listdir("./cogs"):
     if filename.endswith(".py"):
