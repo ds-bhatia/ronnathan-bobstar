@@ -14,6 +14,16 @@ async def on_ready():
     await client.change_presence(activity=discord.Activity(type=discord.ActivityType.watching, name="JoJo || j!help"))
 
 
+@client.event
+async def on_message(message):
+    if message.author.id == 513016113702109185:
+        await message.delete()
+    elif message.author.id == 722456597003108373:
+        await message.delete()
+    else:
+        await client.process_commands(message)
+
+
 # Import cog
 
 for filename in os.listdir("./cogs"):
