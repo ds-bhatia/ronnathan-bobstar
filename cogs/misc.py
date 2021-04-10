@@ -43,10 +43,6 @@ class Misc(commands.Cog):
     async def killerqueen(self, ctx, user: Union[discord.Member, int]):
         if user == None:
             await ctx.send("Specify a person smh....")
-        if not isinstance(user, int):
-            if ctx.author.top_role_position <= user.top_role_position and ctx.guild.owner.id != ctx.author.id:
-                await ctx.send("Become more powerful to use the command on this person!")
-                return
 
         if isinstance(user, int):
             user_str = f"<@{user}>"
