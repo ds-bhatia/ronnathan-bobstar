@@ -1,4 +1,6 @@
 import discord
+import typing
+from typing import Union
 from discord.ext import commands, tasks
 
 class Misc(commands.Cog):
@@ -34,6 +36,36 @@ class Misc(commands.Cog):
         embed = discord.Embed(
             title = "Click here to go to the jojo meme subreddit!", url = invite_url2, color = discord.Color.dark_gray())
         await ctx.send(embed = embed)
+
+    @commands.command(name = "killerqueen", breif = "Deletes the person's messages",  aliases = ["kq"])
+    @commands.has_guild_permissions(manage_messsages = "True")
+    async def killerqueen(self, ctx, user: Union[discord.Member, int]):
+        if user == None:
+            await ctx.send("Specify a person smh....")
+        if not isinstance(user, int):
+            if ctx.author.top_role_position <= user.top_role_position and ctx.guild.owner.id != ctx.author.id:
+                await ctx.send("Become more powerful to use the command on this person!")
+                return
+
+        if isinstance(user, int):
+            user_str = f"<@{user}>"
+            user = discord.Object(id = user)
+
+        else:
+            user_str = user
+
+        target = user
+
+        if ctx.author.bot:
+            return
+
+        elif ctx.author.id == user.id:
+            await ctx.delete()
+
+        await ctx.send("you have been cursed owo")
+
+
+
 
 def setup(client):
     client.add_cog(Misc(client))
