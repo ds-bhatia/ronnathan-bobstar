@@ -39,7 +39,7 @@ class Misc(commands.Cog):
         await ctx.send(embed=embed)
 
     @commands.command(name="killerqueen", breif="Deletes the person's messages", aliases=["kq"])
-    @commands.has_guild_permissions(manage_messsages = True)
+    @commands.has_guild_permissions(manage_messages = True)
     async def killerqueen(self, ctx, user: Union[discord.Member, int]):
         if user == None:
             await ctx.send("Specify a person smh....")
