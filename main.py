@@ -13,7 +13,7 @@ client = commands.Bot(command_prefix="j!", help_command=PrettyHelp())
 async def on_ready():
     await client.change_presence(activity=discord.Activity(type=discord.ActivityType.watching, name="JoJo || j!help"))
     
-@client.event
+"""@client.event
 async def on_message(message):
     if message.author.id == 722456597003108373:   #prateek
         await message.delete()
@@ -22,7 +22,7 @@ async def on_message(message):
         await message.delete()
         pass
     else:
-        await client.process_commands(message)
+        await client.process_commands(message)"""
 
 
 # Import cog
