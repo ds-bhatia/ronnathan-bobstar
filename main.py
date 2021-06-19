@@ -18,9 +18,6 @@ async def on_message(message):
     if message.author.id == 641643785519890432:   #navan 
         await message.delete()
         pass
-    """elif message.author.id == 712690961725128777:  #asas
-        await message.delete()
-        pass"""
     else:
         await client.process_commands(message)
 
