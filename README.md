@@ -1,2 +1,2 @@
 # Ronnathan Bobstar
-Ronn except hes JoJo
+Discord bot based on Jojo's Bizarre Adventure
