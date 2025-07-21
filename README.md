@@ -1,2 +1,2 @@
 # Ronnathan Bobstar
-Discord bot based on Jojo's Bizarre Adventure
+Discord bot based on Jojo's Bizarre Adventure.
